@@ -32,7 +32,6 @@ int main(void) {
 			}
 		}
 	}
-	printf("\n");
 
 	// 2차원 배열 모든 원소 출력
 	for (int i = 0; i < h; i++) {

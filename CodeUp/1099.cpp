@@ -37,9 +37,7 @@ int main(void) {
 			antPosX++; // 오른쪽으로 이동
 	}
 
-
 	// 2차원 배열 출력
-	printf("\n\n");
 	for (int i = 0; i < 10; i++) {
 		for (int j = 0; j < 10; j++) {
 			printf("%d ", maze[i][j]);
