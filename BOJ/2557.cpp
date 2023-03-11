@@ -3,11 +3,11 @@ using namespace std;
 
 int main(void)
 {
-    ios::sync_with_stdio(0);
+    ios::sync_with_stdio(false);
     cin.tie(0);
+    cout.tie(0);
 
-    int A, B;
-    cin >> A >> B;
-    cout << A + B;
+    cout << "Hello World!";
+
     return 0;
 }

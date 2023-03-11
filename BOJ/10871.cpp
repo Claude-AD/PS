@@ -1,34 +1,16 @@
-#define _CRT_SECURE_NO_WARNINGS
-#include <iostream>
-#include <vector>
+#include <bits/stdc++.h>
 using namespace std;
 
+int n, x, a[10005];
 int main(void)
 {
-    // freopen("C:\\Users\\YunJunHyeok\\source\\repos\\Algorithm\\Algorithm\\BOJ\\input.txt", "r", stdin);
-    ios::sync_with_stdio(false);
+    ios::sync_with_stdio(0);
     cin.tie(0);
-    cout.tie(0);
+    cin >> n >> x;
 
-    int N, X;
-    cin >> N >> X;
-
-    vector<int> A;
-    A.reserve(N);
-
-    int num;
-    for (int i = 0; i < N; i++)
-    {
-        cin >> num;
-        A.push_back(num);
-    }
-
-    for (auto iter : A)
-    {
-        if (iter < X)
-            cout << iter << ' ';
-    }
-    cout << "\n";
-
+    for (int i = 0; i < n; i++)
+        cin >> a[i];
+    for (int i = 0; i < n; i++)
+        if (a[i] < x) cout << a[i] << ' ';
     return 0;
 }
