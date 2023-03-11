@@ -3,23 +3,16 @@ using namespace std;
 
 int main(void)
 {
-    ios::sync_with_stdio(false);
+    ios::sync_with_stdio(0);
     cin.tie(0);
-    cout.tie(0);
 
     int score;
     cin >> score;
 
-    if (score >= 90 && score <= 100)
-        cout << 'A';
-    else if (score >= 80 && score <= 89)
-        cout << 'B';
-    else if (score >= 70 && score <= 79)
-        cout << 'C';
-    else if (score >= 60 && score <= 69)
-        cout << 'D';
-    else
-        cout << 'F';
-
+    if (90 <= score && score <= 100) cout << 'A';
+    else if (80 <= score) cout << 'B';
+    else if (70 <= score) cout << 'C';
+    else if (60 <= score) cout << 'D';
+    else cout << 'F';
     return 0;
 }

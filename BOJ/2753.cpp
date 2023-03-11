@@ -3,9 +3,8 @@ using namespace std;
 
 int main(void)
 {
-    ios::sync_with_stdio(false);
+    ios::sync_with_stdio(0);
     cin.tie(0);
-    cout.tie(0);
 
     int year;
     cin >> year;
@@ -14,6 +13,5 @@ int main(void)
         cout << 1 << endl;
     else
         cout << 0 << endl;
-
     return 0;
 }

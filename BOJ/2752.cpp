@@ -1,34 +1,17 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-void ChangePos(int arr[], const int idx1, const int idx2)
-{
-    int temp = arr[idx1];
-    arr[idx1] = arr[idx2];
-    arr[idx2] = temp;
-}
-
 int main(void)
 {
-    ios::sync_with_stdio(false);
+    ios::sync_with_stdio(0);
     cin.tie(0);
-    cout.tie(0);
 
-    int arr[3];
-    for (int i = 0; i < 3; i++)
-        cin >> arr[i];
-
-    if (arr[0] > arr[1])
-        ChangePos(arr, 0, 1);
-
-    if (arr[1] > arr[2])
-        ChangePos(arr, 1, 2);
-
-    if (arr[0] > arr[1])
-        ChangePos(arr, 0, 1);
-
-    for (int i = 0; i < 3; i++)
-        cout << arr[i] << ' ';
-
+    int a, b, c; // input
+    cin >> a >> b >> c;
+    int d, e, f; // output
+    d = min({ a,b,c });
+    f = max({ a,b,c });
+    e = a + b + c - d - f;
+    cout << d << ' ' << e << ' ' << f;
     return 0;
 }

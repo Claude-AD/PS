@@ -3,9 +3,8 @@ using namespace std;
 
 int main(void)
 {
-    ios::sync_with_stdio(false);
+    ios::sync_with_stdio(0);
     cin.tie(0);
-    cout.tie(0);
 
     int A, B;
     cin >> A >> B;
@@ -15,6 +14,5 @@ int main(void)
         << A * B << '\n'
         << A / B << '\n'
         << A % B << '\n';
-
     return 0;
 }
