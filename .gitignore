@@ -6,3 +6,4 @@ CMakeLists.txt
 cmake-build-debug
 main.cpp
 .DS_Store
+input.txt
