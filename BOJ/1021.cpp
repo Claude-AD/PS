@@ -13,25 +13,19 @@ int main(void)
     while(M--) {
         int th;
         cin >> th;
-        for(int i=0; i<DQ.size(); i++) {
-            if(DQ[i] == th) {
-                if(i <= DQ.size() / 2) {
-                    for(int j=0; j<i; j++) {
-                        DQ.push_back(DQ.front());
-                        DQ.pop_front();
-                        cnt++;
-                    }
-                }
-                else {
-                    for(int j=DQ.size()-1; j>=i; j--) {
-                        DQ.push_front(DQ.back());
-                        DQ.pop_back();
-                        cnt++;
-                    }
-                }
+        int idx = find(DQ.begin(), DQ.end(), th) - DQ.begin();
+        while(DQ.front() != th) {
+            if(idx <= DQ.size() / 2) {
+                DQ.push_back(DQ.front());
                 DQ.pop_front();
             }
+            else {
+                DQ.push_front(DQ.back());
+                DQ.pop_back();
+            }
+            cnt++;
         }
+        DQ.pop_front();
     }
     cout << cnt;
 }
