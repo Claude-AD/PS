@@ -19,6 +19,7 @@ int main(void)
     cin.tie(0);
     int n;
     cin >> n;
-    cout << (1<<n) - 1 << '\n';
+    cout << (1<<n) - 1 << '\n'; // pow를 쓰지 않도록 주의!
+                                // 아무래도 반환형이 double이라 오류가 나는 듯
     hanoi(1, 2, 3, n);
 }
