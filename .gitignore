@@ -5,6 +5,7 @@ x64
 CMakeLists.txt
 cmake-build-debug
 main.cpp
+test.cpp
 .DS_Store
 input.txt
 Assignment
